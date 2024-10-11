@@ -1,0 +1,52 @@
+public class Employee {
+    private String name;
+    private int id;
+    private double hourlyRate;
+    private double hoursWorked;
+
+    public Employee(String name, String employeeID, double hourlyRate) {
+        this.name = name;
+        this.employeeID = employeeID;
+        this.hourlyRate = hourlyRate;
+        this.hoursWorked = 0;
+    }
+
+    public double getRecordHours() {
+        this.hoursWorked + hours;
+        
+    }
+
+    public double getCalculateSalary() {
+        return hourlyRate * hoursWorked;
+    }
+
+    public int getResetHours() {
+        this.hoursWorked = 0;
+    }
+    
+    // Setter method
+    
+
+    public void diplayEmployeeDetails() {
+        System.out.println("Employee ID: " + employeeID);
+        System.out.println("Name: " + name);
+        System.out.println("Hourly Rate: " + hourlyRate);
+        System.out.println("__________________________________");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        // Create Employee objects
+        Employee employee1 = new Employee("E001", "Alice Go", 15, 160);
+        Employee employee2 = new Employee("E002", "Bob Hann", 18, 150);
+
+        // Calculate and display salaries
+        System.out.println("Calculating salaries...\n");
+        
+        System.out.println("Employee Details:");
+        employee1.displayEmployeeDetails();
+        employee2.displayEmployeeDetails();
+    }
+}
